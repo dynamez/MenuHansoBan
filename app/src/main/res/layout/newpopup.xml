@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dp"
+    android:layout_height="900dp"
+    android:background="@color/temple_asian_lounge_color">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View android:id="@+id/rectangle_banner"
+            android:background="@drawable/rectangle_banner_shape"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="801dp"
+            android:layout_height="12dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:src="@drawable/producto3mini"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="400dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$9.000"
+                android:textSize="40dp"
+                android:textColor="@color/sushi_bar_color"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="50dp"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/boton1"
+                android:src="@drawable/boton2"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="200dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View android:id="@+id/rectangle_banner3"
+        android:background="@drawable/rectangle_banner_shape"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="330dp"
+        android:layout_width="801dp"
+        android:layout_height="12dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textpane"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/temple_asian_lounge_color"
+
+
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:text="Nombre"
+            android:textSize="25dp"
+            android:fontFamily="Quicksand-Bold"
+            android:textColor="@color/agregar_color"
+           />
+        <TextView
+            android:id="@+id/koreano"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Nombre"
+            android:textSize="30dp"
+            android:fontFamily="Quicksand-Bold"
+            android:textColor="@color/agregar_color"
+            android:layout_marginStart="450dp"
+            />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="700dp"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:fontFamily="Quicksand-Bold"
+            android:text="@string/descripcion_string"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/agregar_color"
+           />
+
+    </RelativeLayout>
+    <View android:id="@+id/rectangle_banner2"
+        android:background="@drawable/rectangle_banner_shape"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="495dp"
+        android:layout_width="801dp"
+        android:layout_height="12dp" />
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="480dp"
+        android:layout_height="360dp"
+
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="150dp">
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="480dp"
+            android:layout_height="360dp"
+
+            />
+        <FrameLayout android:id="@+id/controllerAnchor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
